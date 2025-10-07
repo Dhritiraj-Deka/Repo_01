@@ -12,6 +12,8 @@ int main()
     Score_PL = (rand()%11)+1;
 do {printf("Your score is %d. Do you want another card? (1 for Yes, 0 for No) ",Score_PL);
     scanf("%d",&N);
+//EDIT 1: ADDED getchar() after scanf as the final get char read the input from leftover inpuy after scanf
+    getchar();
     if (N==1)
     {
         Score_PL = Score_PL + (rand()%11)+1;
@@ -37,4 +39,5 @@ else {printf("BUST!");}
 //PART 4- END
     getchar();
     return 0;
+
 } 
